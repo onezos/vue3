@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>属性绑定</title>
+    <!-- 导入式样 -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <!-- 导入 Vue.js -->
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="image">
+                <!-- 图片放在这-->
+                <!-- 方法1-->
+                <img src="./assets/images/vue.png">
+                <!-- 方法2，使用数据绑定-->
+                <img v-bind:src="image">
+                <!-- 方法2的简写形式-->
+                <img :src="image">
+            </div>
+            <div class="info">
+                <h1>{{ imginfo }}</h1>
+            </div>
+        </div>
+        
+    </div>
+    <!-- 导入编写的javascript -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
