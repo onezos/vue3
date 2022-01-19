@@ -2,7 +2,9 @@
 
 欢迎来到 Vue 3 入门课程。我们将探索 Vue 3这项技术，并为新技能打下坚实的基础，这样我们就可以在此基础上，朝着 Vue 的掌握方向前进。本课程是您前进的第一步，我们可以使用[codepen.io](https://codepen.io/pen/tour/welcome/start)这个平台来在线测试我们的代码。或者使用vs code和git进行编写和管理代码。
 
-在本课程中，我们将学习 Vue.js的基础知识，并构建一个应用程序来将这些概念付诸实践。您将看到我使用 VS code这个代码编辑器用于Vue开发，但是如果你已经有了你选择的代码编辑器，你可以坚持使用那个。如果你也想和我一样，你将需要[立即下载它](https://code.visualstudio.com/download)，并安装一个扩展[es6-string-html。](https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html)您将了解为什么此扩展在后面的课程中很有用。
+在本课程中，我们将学习 Vue.js的基础知识，并构建一个应用程序来将这些概念付诸实践。Vue (读音 /vjuː/，类似于 **view**) 是一套用于构建用户界面的**前端框架**，旨在更好地组织与简化WEB开发，它能方便地获取数据的更新，并通过组件的方法实现视图和模型的交互。
+
+接下来您将看到我使用 VS code这个代码编辑器用于Vue开发，但是如果你已经有了你选择的代码编辑器，你可以坚持使用那个。如果你也想和我一样，你将需要[立即下载它](https://code.visualstudio.com/download)，并安装一个扩展[es6-string-html。](https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html)您将了解为什么此扩展在后面的课程中很有用。
 
 -----------
 
