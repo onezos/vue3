@@ -1,6 +1,6 @@
-## 2. 属性绑定
+## 2. v-bind指令
 
-在本课中，我们将介绍属性绑定的概念。
+在本课中，我们将介绍v-bind的用法。
 
 ------
 
@@ -71,7 +71,7 @@ const mountedApp = app.mount('#app');
 📄**index.html**
 
 ```html
-<div class="product-image">
+<div class="image">
   <img src="image">
 </div>
 ```
