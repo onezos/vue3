@@ -2,16 +2,16 @@ const app = Vue.createApp({
     data() {
         return {
             imginfo: '商品',
-            image: './assets/images/smile.png',
-            inSmile: 100,
-            details: ['20% 眼睛', '10% 嘴', '20% 红脸蛋'],
+            image: './assets/images/blue.png',
+            inSlanket: 100,
+            details: ['羊羔绒', '加厚', '保暖'],
             items: [
-                    { id: 001, attrs: 'smile'},
-                    { id: 002, attrs: 'cry' }
+                    { id: 001, attrs: '蓝色'},
+                    { id: 002, attrs: '黄色' }
             ],
             objs: {
-                name: 'zhang san',
-                age: 18
+                name: '毛毯',
+                prices: 130
             }
         }
     }

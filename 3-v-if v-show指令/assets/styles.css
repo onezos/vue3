@@ -79,8 +79,8 @@ li {
 }
 
 .nav-bar {
-  background: linear-gradient(-90deg, #84cf6a, #16c0b0);
-  height: 60px;
+  background: linear-gradient(-90deg, #4577d9, #2f66b9);
+  height: 50px;
   margin-bottom: 25px;
   -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);

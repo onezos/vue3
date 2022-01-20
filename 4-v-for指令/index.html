@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>属性绑定</title>
+    <title>v-for指令</title>
     <!-- 导入式样 -->
     <link rel="stylesheet" href="./assets/styles.css" />
     <!-- 导入 Vue.js -->
@@ -12,24 +12,27 @@
 
 <body>
     <div id="app">
-        <div class="container">
-            <div class="image">
-                <!-- 图片放在这-->
-                <img :src="image">
-            </div>
-            <div class="info">
-                <h1>{{ imginfo }}</h1>
-                <p v-if="inSmile > 10">有货</p>
-                <p v-else-if="inSmile <= 10 && inSmile > 0">快要卖光了</p>
-                <p v-else>缺货</p>
-                <ul>
-                    <li v-for="detail in details">{{ detail }}</li>
-                </ul>
-                <div v-for="(item, index) in items" :key="item.id">{{ index }} -- {{ item.attrs }}</div>
-                <div v-for="(obj, name, index) in objs">{{ index }} - {{ name }}- {{ obj }}</div>
+        <div class="nav-bar"></div>
+        <div class="display">
+            <div class="container">
+                <div class="image">
+                    <!-- 图片放在这-->
+                    <img :src="image">
+                </div>
+                <div class="info">
+                    <h1>{{ imginfo }}</h1>
+                    <p v-if="inSlanket > 10">有货</p>
+                    <p v-else-if="inSlanket <= 10 && inSlanket > 0">快要卖光了</p>
+                    <p v-else>缺货</p>
+                    <ul>
+                        <li v-for="detail in details">{{ detail }}</li>
+                    </ul>
+                    <div v-for="(item, index) in items" :key="item.id">{{ index }} -- {{ item.attrs }}</div>
+                    <div v-for="(obj, name, index) in objs">{{ index }} - {{ name }}- {{ obj }}</div>
+
+                </div>
             </div>
         </div>
-        
     </div>
     <!-- 导入编写的javascript -->
     <script src="./main.js"></script>
