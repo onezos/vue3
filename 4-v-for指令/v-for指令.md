@@ -10,7 +10,7 @@
 
 前三节课，我们对Vue有了初步的印象，页面也做的很随意，这节课开始，在之前的基础上，我们设想做一个购物的页面，首先画一个页面的布局，然后修改代码完善它。
 
-![image-20220120064106071](C:\Users\gdd93\AppData\Roaming\Typora\typora-user-images\image-20220120064106071.png)
+![image-20220120064106071](./assets/images/image-20220120064106071.png)
 
 我们可以把之前的页面代码都放在商品区，先不要想购物车这个模块，新建一个包裹商品区的`div`作为容器，把之前的`<div class="container">`里面的代码都放进去，然后按`Tab`键改一下缩进。层级如下。
 
@@ -135,7 +135,9 @@ const mountedApp = app.mount('#app');
 
 我们可以用`v-for`指令基于一个数组来渲染一个列表。`v-for` 指令需要使用`detail in details`形式的特殊语法，其中 `details`是源数据数组，而`detail`则是被迭代的数组元素的别名。
 
-![image-20220120065755055](C:\Users\gdd93\AppData\Roaming\Typora\typora-user-images\image-20220120065755055.png)
+![image-20220120065755055](./assets/images/image-20220120065755055.png)
+
+
 
 ------
 
@@ -220,7 +222,9 @@ const mountedApp = app.mount('#app');
 
 这个默认的模式是高效的，但是只适用于不依赖子组件状态或临时DOM 状态 (例如：表单输入值) 的列表渲染输出。
 
-![image-20220120070607579](C:\Users\gdd93\AppData\Roaming\Typora\typora-user-images\image-20220120070607579.png)
+![image-20220120070607579](./assets/images/image-20220120070607579.png)
+
+
 
 ------
 
@@ -248,7 +252,9 @@ const mountedApp = app.mount('#app');
 
 页面上就看到索引值了。所以对于普通的数组，我们可以使用索引作为key值。
 
-![image-20220120070743463](C:\Users\gdd93\AppData\Roaming\Typora\typora-user-images\image-20220120070743463.png)
+![image-20220120070743463](./assets/images/image-20220120070743463.png)
+
+
 
 ---------------------
 
@@ -351,5 +357,5 @@ const mountedApp = app.mount('#app');
 
 页面展示
 
-![image-20220120070940797](C:\Users\gdd93\AppData\Roaming\Typora\typora-user-images\image-20220120070940797.png)
+![image-20220120070940797](./assets/images/image-20220120070940797.png)
 
