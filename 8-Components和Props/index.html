@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Components & Props</title>
+    <!-- 导入式样 -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <!-- 导入 Vue.js -->
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="nav-bar"></div>
+        <div class="cart">购物车({{ cart }})</div>
+        <product-display :premium="premium"></product-display>
+    </div>
+    <!-- 导入编写的javascript -->
+    <script src="./main.js"></script>
+    <!-- 导入Components -->
+    <script src="./components/ProductDisplay.js"></script>
+    <!-- 挂载App -->
+    <script>
+        const mountedApp = app.mount('#app')
+    </script>
+</body>
+</html>
