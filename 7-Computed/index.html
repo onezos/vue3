@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>事件处理</title>
+    <!-- 导入式样 -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <!-- 导入 Vue.js -->
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="nav-bar"></div>
+        <div class="cart">购物车({{ cart }})</div>
+        <div class="display">
+            <div class="container">
+                <div class="image">
+                    <!-- 图片放在这-->
+                    <img :src="image">
+                </div>
+                <div class="info">
+                    <h1>{{ title }}</h1>
+                    <p v-if="inSlanket > 10">有货</p>
+                    <p v-else-if="inSlanket <= 10 && inSlanket > 0">快要卖光了</p>
+                    <p v-else>缺货</p>
+                    <ul>
+                        <li v-for="detail in details">{{ detail }}</li>
+                    </ul>
+                    <div 
+                        v-for="(item, index) in items" 
+                        :key="item.id" 
+                        @mouseover="updateItem(index)"
+                        class="color-circle"
+                        :style="{ backgroundColor: item.attrs }">
+                    </div>
+                    <button 
+                        class="button" 
+                        :class="{ disabledButton: !inSlanket }" 
+                        :disabled="!inSlanket" 
+                        @click="addToCart">
+                        添加到购物车
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 导入编写的javascript -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
