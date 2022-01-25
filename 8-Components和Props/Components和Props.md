@@ -91,7 +91,7 @@ app.component('product-display', {
 
 #### 8.2.3 数据和方法
 
-现在我们已经为这个组件提供了它的模板结构，我们需要给它提供它的数据和方法，这些数据和方法仍然存存**main.js**中。因此，我们现在将它们粘贴进去：
+现在我们已经为这个组件提供了它的模板结构，我们需要给它提供它的数据和方法，这些数据和方法仍然存在**main.js**中。因此，我们现在将它们粘贴进去：
 
 📄**components/ProductDisplay.js**
 
@@ -174,7 +174,7 @@ const app = Vue.createApp({
 
 #### 8.2.5 导入组件
 
-要使用`product-display`组件，我们需要将其导入到我们将**index.html**中。
+要使用`product-display`组件，我们需要将其导入到我们的**index.html**中。
 
 📄**index.html**
 
